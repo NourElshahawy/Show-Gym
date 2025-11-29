@@ -154,19 +154,39 @@ header .show-mob{
 /* section download end */
 
 .oppinion .boxes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     gap: 50px;
-    padding-top: 20px;
 }
-.footer-links {
+/* .footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
+ .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a::after {
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%) translateY(-100%);
+  }
+
+  .social-icons a:hover::after {
+    transform: translateX(-50%) translateY(-120%);
+  }
+
 }
 
 @media (max-width: 798px) {
@@ -230,12 +250,14 @@ header .show-mob{
     height: 540px;
 }
 
-    .club .imgs{
+/* مشكله السلايدر هنا مكنش شغال علشان انت مدي للكلاس فليكس وراب وهو كده كده السويبر بيبقي اخدهم فا بيحصل كونفليكت خلي بالك بعد كده */
+
+    /* .club .imgs{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    }
+    } */
     .download .container .box .right img{
         padding-top: 0px;
     }
@@ -244,9 +266,9 @@ header .show-mob{
     padding: 10px 20px;
     /* overflow: hidden; */
 }
-.footer-links {
+/* .footer-links {
     display: none;
-}
+} */
 /*  */
 .steps-row {
         flex-direction: column;
@@ -264,10 +286,8 @@ header .show-mob{
    .step-line {
     display: block !important;
     position: relative;
-
     width: 3px;
-    height: 80px;
-    
+    height: 150px;
     margin: 0px auto;
     background-image: repeating-linear-gradient(
         to bottom,
@@ -338,12 +358,60 @@ margin-top: 0px;
        .step-line {
     margin-left: 320px;
 }
+.oppinion .boxes .box img{
+    width: 55px;
+    height: 55px;
+    margin-top: -30px;
+}
+.oppinion .boxes .box h3{
+    font-weight: 700;
+    font-size: 14px;
+}
+.oppinion .boxes .box p{
+    font-weight: 400;
+}
+.oppinion .boxes .box::before {
+    left: -20px;
+    top: 20px;
+    width: 50px;
+    height: 30px;
+
+    font-size: 12px;
+    border-radius: 20% 40% 20% 40%;
+}
+}
+@media (max-width: 768px){
+    .download .container .box .left img{
+        width: 150px;
+        height: 180px;
+    }
+    .step-line {
+        margin-left: 420px;
+        animation: move-dash 0.6s linear infinite;
+    }
+}
+
+@media (max-width: 576px) {
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-logo img {
+    width: 60px;
+  }
+
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 536px){
        .step-line {
     margin-left: 320px;
 }
 }
+
 @media (max-width: 430px){
     .icon-rt {
         top: 20px;
@@ -471,9 +539,9 @@ margin-top: 0px;
     }
 
     /* السويبر */
-    .club{
+    /* .club{
         display: none;
-    }
+    } */
     .club .swiper {
         width: 100%;
     }
@@ -528,6 +596,11 @@ margin-top: 0px;
 
 @media (max-width:375px) {
     .step-line {
-    margin-left: 240px;
+    margin-left: 243px;
+}
+@media (max-width:320px) {
+    .step-line {
+    margin-left: 220px;
+}
 }
 }

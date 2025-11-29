@@ -665,10 +665,6 @@ color: var(--primary-color);
   padding: 20px 0;
 }
 
- /* .swiper-wrapper {
-  display: flex;
-  align-items: center;
-} */
 
 .mySwiper .swiper-slide .imgs{
     display: flex;
@@ -941,23 +937,16 @@ margin-top: -125px;
     color: var(--dark-color);
 }
 .oppinion .boxes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .oppinion .boxes .box{
+        width: 100%;
+    max-width: 500px;
+    height: 200px;
     position: relative;
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
     background: var(--white-color);
-    border-radius: 11px;
+        border-radius: 11px;
     padding: 20px;
     transition: 0.4s ease;
 }
@@ -999,11 +988,25 @@ margin-top: -125px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
+    max-width: 100%;
 }
 .oppinion .boxes .box p{
+    max-width: 100%;
     font-weight: 400;
     font-size: 14px;
     text-align: right;
+}
+
+.oppinion .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.oppinion .swiper-pagination-bullet-active {
+  width: 30px; 
+  border-radius: 12px;
 }
 /* section oppinion end */
 

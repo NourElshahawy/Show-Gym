@@ -31,7 +31,9 @@ window.onload = function () {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+      clickable: true,
     },
+    
     mousewheel: {
       thresholdDelta: 70,
     },
@@ -54,12 +56,17 @@ const swiper = new Swiper(".mySwiper", {
   loop: true,
   loopAdditionalSlides: 10,
   autoplay: {
-    delay: 0, 
+    delay: 1000,
     disableOnInteraction: false,
   },
-  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  // freeMode: true,
   freeModeMomentum: false,
-  allowTouchMove: false,
+  allowTouchMove: true,
   slidesPerView: "auto",
   spaceBetween: 30,
 
