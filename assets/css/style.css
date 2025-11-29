@@ -59,7 +59,7 @@ img{
     display: block;
     object-fit:cover ;
     max-width: var(--percent100);
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 strong{
 font-weight: var(--fw8);
