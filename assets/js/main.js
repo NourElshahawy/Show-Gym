@@ -21,7 +21,7 @@ burger.onclick = () => {
 
 // swiper
 window.onload = function () {
-  var swiper = new Swiper(".swiper", {
+  var swiper = new Swiper(".hero-swiper", {
     loop: true,
     initialSlide: 2,
     grabCursor: true,
@@ -47,6 +47,53 @@ window.onload = function () {
   });
 };
 // swiper end
+//
+const swiper = new Swiper(".mySwiper", {
+  rtl: false,
+  speed: 5000,
+  loop: true,
+  loopAdditionalSlides: 10,
+  autoplay: {
+    delay: 0, 
+    disableOnInteraction: false,
+  },
+  freeMode: true,
+  freeModeMomentum: false,
+  allowTouchMove: false,
+  slidesPerView: "auto",
+  spaceBetween: 30,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+
+//
+
+// swiper-oppinion
+
+
+// swiper-oppinion
+
 
 let intro = gsap.timeline();
 

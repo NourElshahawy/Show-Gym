@@ -55,15 +55,17 @@
 
     <!-- section hero -->
     <section class="hero" id="hero">
-        <h1>كل الرياضات في مكان واحد</h1>
-        <p>
-            سواء كنت تبحث عن ناديك أو تعرض خدماتك، هنا تلاقي كل الرياضات من جيمات رجالي ونسائي ابحث عن النوادي القريبة،
-            قارن الأسعار
-            والعروض، واختر الاشتراك الأنسب لك
-        </p>
-        <button class="btn">
-            <a href="#">حمل التطبيق</a>
-        </button>
+        <div class="hero-content">
+            <h1>كل الرياضات في مكان واحد</h1>
+            <p>
+                سواء كنت تبحث عن ناديك أو تعرض خدماتك، هنا تلاقي كل الرياضات من جيمات رجالي ونسائي ابحث عن النوادي القريبة،
+                قارن الأسعار
+                والعروض، واختر الاشتراك الأنسب لك
+            </p>
+            <button class="btn">
+                <a href="#">حمل التطبيق</a>
+            </button>
+        </div>
         <img src="assets/imgs/heading/Sports icon.svg" class="icon icon-rt" />
         <img src="assets/imgs/heading/Sports icon (1).svg" class="icon icon-rb" />
         <img src="assets/imgs/heading/Sports icon (2).svg" class="icon icon-lt" />
@@ -72,7 +74,7 @@
     <!-- section hero end -->
     <!-- section swiper -->
     <div class="slider-container" id="hero">
-        <div class="swiper">
+        <div class="swiper hero-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="image-wrapper">
@@ -190,52 +192,74 @@
     <!-- section about end -->
 
     <!-- section club -->
+    
+
     <section class="club" id="club">
         <h1>
             النوداى
         </h1>
-        <div class="imgs">
-            <div class="img">
-                <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (2).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (3).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (2).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
-            </div>
-            <div class="img">
-                <img src="assets/imgs/club/img (3).svg" loading="lazy" alt="">
-                <p>
-                    يوجا
-                </p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper imgs">
+                <div class="swiper-slide img">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide img">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide img">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/imgs/club/img (1).svg" loading="lazy" alt="">
+                    <p>
+                        يوجا
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -384,13 +408,11 @@
 
     <!-- footer end -->
 
-    <section>
-        <!-- زر Settings -->
+    <!-- <section>
         <div class="settings-btn" id="settings-btn">
             ⚙️
         </div>
     
-        <!-- بانل Settings -->
         <div class="settings-panel" id="settings-panel">
             <div class="tabs">
                 <button class="tab" onclick="changeColor('#ffffff')">Main Theme</button>
@@ -399,7 +421,7 @@
             </div>
         </div>
     
-    </section>
+    </section> -->
 
     <button id="scrollTopBtn">
         <i class="fas fa-arrow-up"></i>

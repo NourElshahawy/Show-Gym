@@ -6,6 +6,26 @@
 
 /* Responsive */
 @media (max-width: 1080px) {
+
+    header{
+        padding: 20px 30px;
+    }
+    header .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .hero {
+        min-height: 40vh;
+    }
+    .hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+    .hero p {
+        font-size: 20px;
+        width: 80%;
+    }
     
 /* contaienr section */
 .step-line {
@@ -35,7 +55,7 @@ nav{
     position: absolute;
     top: 100px;
     left: 35px;
-    width: 200px;
+    width: 220px;
     background: #FBFDCE;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     padding: 20px;
@@ -61,6 +81,10 @@ header .show-mob{
     display: block;
 }
 
+.hero-content{
+    padding-top: 50px;
+}
+
 /* section hero  */
 .icon {
         width: 120px;
@@ -70,13 +94,13 @@ header .show-mob{
     }
 
     .icon-rt {
-        top: 20px;
+        top: 50px;
         right: 70px;
         transform: rotate(0deg);
     }
 
     .icon-rb {
-        bottom: 20px;
+        bottom: 50px;
         right: 120px;
     }
 
@@ -91,10 +115,12 @@ header .show-mob{
         left: 120px;
     }
 /* section hero end */
-
+.about{
+        padding: 0 ;
+    }
 /* contaienr section */
 .step-line {
-    width: 80px;
+    width: 50px;
     position: absolute;
     top: 30px;
     left: -200px;
@@ -107,6 +133,7 @@ header .show-mob{
     font-size: 20px;
     font-weight: 700;
     margin-top: -35px;
+    line-height: 35px;
 }
 /* contaienr section end */
 /* section download */
@@ -122,7 +149,7 @@ header .show-mob{
 }
 .download{
     padding: 60px 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* section download end */
 
@@ -171,20 +198,20 @@ header .show-mob{
         left: 60px;
     }
 
+    
 
     .about::before {
-        content: "";
-        position: absolute;
         width: 450px;
         height: 450px;
-        top: 55%;
-    }
+    top: 550px;
+    left: -200px;
+}
     .about::after {
         content: "";
         position: absolute;
         width: 450px;
         height: 450px;
-        top: 55%;
+        top: 550px;
         right: -200px;
     }
     .about .img-bottom{
@@ -193,6 +220,15 @@ header .show-mob{
         margin-top: -70px;
     }
 
+    .left-item .flow-phone {
+    width: 165px;
+    height: 540px;
+}
+
+.right-item .flow-phone {
+    width: 165px;
+    height: 540px;
+}
 
     .club .imgs{
         display: flex;
@@ -206,43 +242,260 @@ header .show-mob{
     
 .download{
     padding: 10px 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .footer-links {
     display: none;
 }
+/*  */
+.steps-row {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .step-item {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+   .step-line {
+    display: block !important;
+    position: relative;
+
+    width: 3px;
+    height: 80px;
+    
+    margin: 0px auto;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        #8F9405 0 12px,
+        transparent 12px 22px
+    );
+    margin-left: 430px;
+}
+
+.step-line::before {
+    display: block;
+    left: -3px;
+    top: 100%;
+}
+
+
+    .step-text {
+        margin-top: 50px;
+        font-size: 18px;
+        text-align: center;
+        display: none;
+    }
+
+    .step-circle {
+        width: 65px;
+        height: 65px;
+    }
+/*  */
+/*  */
+.download .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    height: 250px;
+
+}
+.download .container .box .right{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.download .container .box .right h1{
+    font-size: 22px;
+}
+.download .container .box .right p{
+    font-size: 18px;
+}
+.download .container .box .right img{
+    padding: 0px 20px;
+    width: 200px;
+}
+.download .container .box .left img{
+width: 150px;
+height: 150px;
+} 
+.download .container .box .left {
+margin-top: 0px;
+}
+/*  */
+
+}
+@media (max-width: 786px){
+       .step-line {
+    margin-left: 320px;
+}
+}
+@media (max-width: 536px){
+       .step-line {
+    margin-left: 320px;
+}
 }
 @media (max-width: 430px){
     .icon-rt {
-        top: 80px;
+        top: 20px;
         right: 20px;
         transform: rotate(0deg);
     }
 
     .icon-rb {
-        bottom: 0px;
+        bottom: 50px;
         right: 0px;
     }
 
     .icon-lt {
-        top: 80px;
+        top: 20px;
         left: 20px;
         transform: rotate(0deg);
     }
 
     .icon-lb {
-        bottom: 0px;
+        bottom: 50px;
         left: 0px;
     }
     .slider-container{
         width: 100%;
     }
-    /* .swiper-slide{
-        width: 300px;
-    } */
-    /* .swiper-slide .container h1{
-        font-size: 1.1rem;
-    } */
+    
+    .left-item .flow-phone {
+        width: 105px;
+        height: 340px;
+    }
+
+    .right-item .flow-phone {
+        width: 105px;
+        height: 340px;
+    }
+    /*  */
+    
+    .about {
+        padding: 40px 10px;
+        overflow: hidden;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    /* شكل الخلفيات الجانبية (الدوائر) */
+    .about::before,
+    .about::after {
+        width: 350px;
+        height: 350px;
+        top: 450px;
+        opacity: 0.4;
+    }
+
+    /* Wrapper */
+    .flow-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 0;
+    }
+
+    /* كل عنصر */
+    .flow-item {
+        max-width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    /* النص */
+    .flow-item .flow-text {
+        font-size: 22px;
+        margin-bottom: 10px;
+        transform: none !important;
+    }
+
+    /* السهم */
+    .flow-item .flow-arrow {
+        width: 25px;
+        height: 80px;
+        margin: 10px 0;
+        animation: none; 
+    }
+
+    /* الموبايل الشمال */
+    .left-item .flow-phone {
+        width: 210px;
+        height: auto;
+        margin: 0 auto;
+        animation: none;
+        transform: none;
+    }
+
+    /* الموبايل اليمين */
+    .right-item .flow-phone {
+        width: 210px;
+        height: auto;
+        margin: 0 auto;
+        animation: none;
+        transform: none;
+    }
+
+    /* الصورة اللي تحت */
+    .about .img-bottom {
+        margin-top: -50px;
+        transform: scale(0.8);
+        animation: none;
+    }
+
+    /*  */
+
+    /*  */
+    .club {
+        padding: 40px 10px;
+    }
+
+    .club h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* السويبر */
+    .club{
+        display: none;
+    }
+    .club .swiper {
+        width: 100%;
+    }
+
+    .club .imgs {
+        gap: 12px !important;
+        padding: 6px 0;
+    }
+
+    .club .imgs .img {
+        width: 110px !important;
+        height: auto;
+    }
+
+    .club .imgs .img img {
+        width: 100%;
+        height: 100%;
+        animation: rotateScale 15s ease-in-out infinite alternate;
+    }
+
+    /*  */
+
     .swiper-slide-active .image-wrapper img{
         width: 100%;
         height: 100%;
@@ -252,9 +505,6 @@ header .show-mob{
         height: 12px;
     }
     /* section download */
-    .download .container .box .right{
-        margin-top: -105px;
-    }
     .download .container .box .right h1{
         font-weight: bold;
         font-size: 18px;
@@ -271,4 +521,13 @@ header .show-mob{
 .download .container .box .left img{
 margin-top: 0px;
 }
-} 
+       .step-line {
+    margin-left: 270px;
+}
+}
+
+@media (max-width:375px) {
+    .step-line {
+    margin-left: 240px;
+}
+}
