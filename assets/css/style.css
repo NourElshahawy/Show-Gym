@@ -113,6 +113,7 @@ font-weight: var(--fw6);
 
 /* header */
 header {
+    overflow: hidden;
     width: 100%;
     padding: 20px 80px;
     display: flex;
@@ -227,6 +228,7 @@ color: var(--primary-color);
 
 /* HERO SECTION */
 .hero {
+    overflow: hidden;
     min-height: 50vh;
     position: relative;
     text-align: center;
@@ -353,6 +355,7 @@ color: var(--primary-color);
 
 /* section swiper */
 .slider-container{
+    overflow: hidden;
     min-height: 50vh;
     width: 100%;
 }
@@ -437,6 +440,7 @@ color: var(--primary-color);
 
 /* about section */
 .about {
+    overflow: hidden;
     position: relative;
     text-align: center;
     display: flex;
@@ -445,7 +449,6 @@ color: var(--primary-color);
     flex-direction: column;
     gap: 0px;
     padding: 60px 20px;
-    overflow: hidden;
 }
 
 .about::before {
@@ -636,6 +639,7 @@ color: var(--primary-color);
 
 /* club section */
 .club {
+    overflow: hidden;
     position: relative;
     text-align: center;
     padding: 60px 20px;
@@ -719,6 +723,7 @@ color: var(--primary-color);
 /* .steps-container */
 
 .steps-container {
+    overflow: hidden;
     padding: 64px 2px;
     margin: 2rem auto;
     max-width: 100%;
@@ -856,7 +861,7 @@ color: var(--primary-color);
 /* download section  */
 .download{
     padding: 110px 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .download .container{
     border-radius: 32px;
@@ -919,6 +924,7 @@ margin-top: -125px;
 
 /* section oppinion */
 .oppinion {
+    overflow: hidden;
     position: relative;
     text-align: center;
     padding: 60px 20px;
@@ -1013,6 +1019,7 @@ margin-top: -125px;
 
 /* footer */
 .custom-footer {
+    overflow: hidden;
   background: var(--primary-color); 
   padding: 20px 0;
   text-align: center;
