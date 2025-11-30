@@ -113,7 +113,7 @@ font-weight: var(--fw6);
 
 /* header */
 header {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     padding: 20px 80px;
     display: flex;
@@ -228,7 +228,7 @@ color: var(--primary-color);
 
 /* HERO SECTION */
 .hero {
-    overflow: hidden;
+    /* overflow: hidden; */
     min-height: 50vh;
     position: relative;
     text-align: center;
