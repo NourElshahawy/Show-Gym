@@ -110,12 +110,36 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 6,
       spaceBetween: 50,
     },
   },
 });
 
+const oppinion_swiper = new Swiper(".oppinion-Swiper", {
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
 //
 
 // swiper-oppinion
