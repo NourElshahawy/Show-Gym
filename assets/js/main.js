@@ -33,7 +33,7 @@ window.onload = function () {
       dynamicBullets: true,
       clickable: true,
     },
-    
+
     mousewheel: {
       thresholdDelta: 70,
     },
@@ -45,6 +45,28 @@ window.onload = function () {
       modifier: 1,
       slideShadows: false,
       useTransform: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
     },
   });
 };
@@ -64,7 +86,7 @@ const swiper = new Swiper(".mySwiper", {
     dynamicBullets: true,
     clickable: true,
   },
-  // freeMode: true,
+  freeMode: false,
   freeModeMomentum: false,
   allowTouchMove: true,
   slidesPerView: "auto",
